@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-qdark text-qwhite;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-qround transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-qdark font-medium hover:bg-opacity-80 shadow-qshadow;
+  }
+  
+  .btn-secondary {
+    @apply bg-qdarkgrey text-qwhite font-medium hover:bg-qgrey shadow-qshadow;
+  }
+  
+  .card {
+    @apply p-6 bg-qwhite rounded-qround shadow-qshadow border border-qgrey border-opacity-10;
+  }
+} 
+
+
